@@ -31,6 +31,7 @@ form h3 {
     width: 100%;
     height: 45px;
     border-radius: 25px;
+
 }
 
 form .input-container {
@@ -50,9 +51,9 @@ form .input-container input::placeholder {
 
 .form-container form .input-container svg {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: calc(50% - 12px);
-    padding-right: 4px;
+    color: #818181;
 
 }
 
@@ -67,15 +68,53 @@ form input[type=submit] {
     color: #fff;
     border: 0;
     font-weight: bold;
+    margin-bottom:20px;
 }
 
-.options-container .checkbox-container, a {
+.options-container .checkbox-container,.options-container a {
     display: inline-block;
     width: 50%;
 }
 
-.options-container a {
+form a {
     text-align: right;
     color: red;
     text-decoration: none;
+}
+form p {
+    text-align: center;
+    color: #818181;
+}
+
+form .social-media-container {
+    margin: 20px auto;
+    width: fit-content;
+}
+
+form .social-media-container .icon-container {
+    background-color: #38529A;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+form .social-media-container .icon-container svg {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    color: #fff;
+}
+
+.icon-container {
+    background-color: #38529A;
+}
+
+form .social-media-container .icon-container:nth-child(2) {
+    background-color: #dd1f1f;
+}
+
+form .social-media-container .icon-container:nth-child(3) {
+    background-color: #4DA6E9;
 }
